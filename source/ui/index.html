@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="robots" content="noindex">
+		<title>First Vue Project</title> 
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+		<style>
+			.my-vue-loading{
+				background: url('img/music-local-1280.png') no-repeat transparent;
+				background-position-x: center;
+				background-position-y: 20%;
+				height: 100%;
+			}
+			.startuperror {
+				font-size:18px; 
+				font-family: Arial, Helvetica, sans-serif; 
+				color:#ffffff; 
+				text-align:center; 
+				padding: 10px 15px; 
+				position: absolute; 
+				margin: auto; 
+				width:100%; 
+				background: #197E81;
+				display: none;
+			}
+			pre.loading {
+				font-size:18px; 
+				font-family: 'Courier New', Courier, monospace; 
+				color:#000; 
+				text-align:left; 
+				padding: 10px 15px; 
+				position: absolute; 
+				margin: auto; 
+				/* width: 100%; */
+				top: 60%;
+				background: #ffffff;
+				display: flex;
+  				justify-content: center;
+			}
+			.loading {
+				font-size:18px; 
+				font-family: Arial, Helvetica, sans-serif; 
+				color:#000; 
+				text-align:center; 
+				padding: 10px 15px; 
+				position: absolute; 
+				margin: auto; 
+				width: 100%;
+				top: 54%;
+				background: #ffffff;
+			}
+			.loading-progress {
+				font-size:18px; 
+				font-family: Arial, Helvetica, sans-serif; 
+				text-align:center; 
+				padding: 0px;
+				position: absolute; 
+				margin: auto; 
+				top: 50%;
+				display: none;
+				left: 0;
+				right: 0;
+				width: 450px;
+				border-style: solid;
+				border-width: 0px;
+				border-color: #555;
+				background: #ffffff;
+			}
+			.loading-progress-bar {
+				font-size:18px; 
+				font-family: Arial, Helvetica, sans-serif; 
+				text-align:center; 
+				padding: 0px;
+				position: absolute; 
+				margin: auto; 
+				top: 50%;
+				height: 12px;
+				background: #197E81;
+			}
+		</style>
+		<script src="http://localhost:8098"></script>
+	</head>
+	<body class="my-vue-loading">
+
+		<div id="app">
+
+		</div>
+		<div class="startuperror" id="startuperror">
+			
+		</div>
+
+		<div class="loading" id="loading">
+			Loading ...
+		</div>
+		<div class="loading-progress" id="loading-progress">
+			<div class="loading-progress-bar" id="loading-progress-bar" style="width:0%"></div>
+		  </div> 
+	</body>
+</html>

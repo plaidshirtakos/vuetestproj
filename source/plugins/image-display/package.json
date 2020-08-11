@@ -1,0 +1,18 @@
+{
+    "name":"image-display",
+    "version": "1.0.0",
+    "plugin": {
+        "ui": 
+        {
+            "main": "ui/ui.ts",
+            "consumes": ["application", "workspace"],
+            "provides": ["image_display"]
+        },
+        "server": 
+        {
+            "main": "server/server.ts",
+            "consumes": ["webserver"],
+            "provides": ["image_display"]
+        }
+    }
+}

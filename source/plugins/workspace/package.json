@@ -1,0 +1,12 @@
+{
+    "name":"workspace",
+    "version": "1.0.0",
+    "plugin": {
+        "ui": 
+        {
+            "main": "ui.ts",
+            "consumes": ["application"],
+            "provides": ["workspace"]
+        }
+    }
+}

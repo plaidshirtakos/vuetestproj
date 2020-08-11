@@ -1,0 +1,12 @@
+{
+    "name":"webserver",
+    "version": "1.0.0",
+    "plugin": {
+        "server": 
+        {
+            "main": "server.ts",
+            "consumes": [],
+            "provides": ["webserver"]
+        }
+    }
+}

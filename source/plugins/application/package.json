@@ -1,0 +1,18 @@
+{
+    "name":"application",
+    "version": "1.0.0",
+    "plugin": {
+        "server": 
+        {
+            "main": "server.ts",
+            "consumes": ["webserver"],
+            "provides": []
+        },
+        "ui": 
+        {
+            "main": "ui.ts",
+            "consumes": [],
+            "provides": ["application"]
+        }
+    }
+}
